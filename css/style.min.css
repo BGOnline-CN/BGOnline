@@ -51,7 +51,7 @@ a:focus { outline: none; }
 .home .home-banner {
   padding: 100px 0;
 }
-.home .banner-img {
+.home .banner-bg {
   width: 687px;
   height: 320px;
   float: right;
@@ -70,7 +70,12 @@ a:focus { outline: none; }
   background-color: #fff;
   border: 1px solid red;
 }
-
+.advantage .advantage-bg {
+  width: 426px;
+  height: 399px;
+  float: left;
+  background: url('../images/section2.png') no-repeat;
+}
 .advantage .advantage-title {
   font-size: 2em;
 }
