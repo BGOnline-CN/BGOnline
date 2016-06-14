@@ -1,0 +1,102 @@
+/*!
+ * Project main stylesheet
+ * author: BGOnline
+ * version 1.0 2016-6-13
+ * http://www.bgonline.cn
+ * @media screen and () and () { }
+ * @import url(style.css) screen and(min-width: 1000px);
+ */
+ 
+
+html, body, header, section, aside, article, footer, iframe, textarea, table, tbody, thead, tfoot, input, form,
+div, ul, li, nav, span, img, tr, th, td, h1, h2, h3, dl, dt, dd, a, i, p {
+  font:14px / 1.5 "Helvetica Neue", Helvetica,Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  list-style: none;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix { 
+  overflow: auto; 
+  _height: 1%;
+}
+
+a:hover {text-decoration: none;}
+a:link {text-decoration: none;}
+a:focus { outline: none; }
+
+.home {
+  background-color: #6a42bd;
+  border: 1px solid red;
+}
+
+.home header{
+  padding: 30px 0;
+}
+.home header nav {
+  float: right;
+}
+.home header nav ul li {
+  float: left;
+  margin-left: 15px;
+}
+.home header nav ul li a {
+  color: #eee;
+  padding: 0 15px;
+}
+.home header nav ul li a:hover {
+  color: #fff;
+}
+.home .home-banner {
+  padding: 100px 0;
+}
+.home .banner-img {
+  width: 687px;
+  height: 320px;
+  float: right;
+  background: url('../images/computer.png') no-repeat;
+}
+.home .banner-title {
+  font-size: 5em;
+  color: #eee;
+}
+.home article {
+  font-size: 1.1em;
+  color: #eee;
+}
+
+.advantage {
+  background-color: #fff;
+  border: 1px solid red;
+}
+
+.advantage .advantage-title {
+  font-size: 2em;
+}
+.advantage .advantage-title::before {
+  content: '';
+  display: block;
+  width: 40px;
+  border: 1px solid #6a42bd;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.procedure {
+  background-color: #f7f5ff;
+  border: 1px solid red;
+}
+
+.procedure .procedure-title {
+  font-size: 2em;
+}
+.procedure .procedure-title::before {
+  content: '';
+  display: block;
+  width: 40px;
+  border: 1px solid #6a42bd;
+  position: absolute;
+  bottom: 0;
+}
