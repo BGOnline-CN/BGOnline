@@ -22,21 +22,17 @@ div, ul, li, nav, span, img, tr, th, td, h1, h2, h3, dl, dt, dd, a, i, p {
   _height: 1%;
 }
 
-a:hover {text-decoration: none;}
-a:link {text-decoration: none;}
+a:hover {text-decoration: none; }
+a:link {text-decoration: none; }
 a:focus { outline: none; }
 
-.home {
-  background-color: #6a42bd;
-  border: 1px solid red;
+.home { 
+  padding-bottom: 50px;
+  background-color: #6a42bd; 
 }
 
-.home header{
-  padding: 30px 0;
-}
-.home header nav {
-  float: right;
-}
+.home header{ padding: 30px 0; }
+.home header nav { float: right; }
 .home header nav ul li {
   float: left;
   margin-left: 15px;
@@ -45,17 +41,18 @@ a:focus { outline: none; }
   color: #eee;
   padding: 0 15px;
 }
-.home header nav ul li a:hover {
-  color: #fff;
-}
-.home .home-banner {
+.home header nav ul li a:hover { color: #fff; }
+.home .home-banner { 
   padding: 100px 0;
+  position: relative;
 }
 .home .banner-bg {
-  width: 687px;
+  width: 636px;
   height: 320px;
-  float: right;
+  position: absolute;
+  right: 0;
   background: url('../images/computer.png') no-repeat;
+  background-size: 100% 100%;
 }
 .home .banner-title {
   font-size: 5em;
@@ -68,40 +65,70 @@ a:focus { outline: none; }
 
 .advantage {
   background-color: #fff;
-  border: 1px solid red;
+  position: relative;
 }
-.advantage .advantage-bg {
-  width: 426px;
-  height: 399px;
-  float: left;
-  background: url('../images/section2.png') no-repeat;
-}
-.advantage .advantage-title {
+.big-title {
   font-size: 2em;
+  margin-top: 80px;
 }
-.advantage .advantage-title::before {
+.big-title::before {
   content: '';
   display: block;
   width: 40px;
   border: 1px solid #6a42bd;
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
 }
 
-
+.advantage .advantage-bg {
+  width: 400px;
+  height: 360px;
+  background: url('../images/section2.png') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.advantage ul { margin-bottom: 50px; }
+.advantage ul li { padding: 30px 0; }
+.advantage ul li img {
+  width: 100px;
+  height: 90px;
+  float: left;
+  margin-right: 20px;
+}
+.advantage ul li div > .small-title {
+  font-size: 1.12em;
+  padding: 8px 0;
+}
 .procedure {
   background-color: #f7f5ff;
-  border: 1px solid red;
+  padding-bottom: 100px;
+}
+.procedure .step { margin-top: 50px; }
+.procedure .step > span {
+  font-size: 6em;
+  margin-right: 15px;
+  color: #C3BAE5;
+}
+.interested {
+  background: url('../images/section3.png') no-repeat;
+  background-size: 100% 100%;
+}
+.interested .big-title, .interested p {
+  color: #eee;
+  text-align: center;
+}
+.interested .big-title::before {
+  display: none;
+}
+.interested p {
+  
+}
+.change-form a{
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  border: 1px solid #fff;
 }
 
-.procedure .procedure-title {
-  font-size: 2em;
-}
-.procedure .procedure-title::before {
-  content: '';
-  display: block;
-  width: 40px;
-  border: 1px solid #6a42bd;
-  position: absolute;
-  bottom: 0;
-}
