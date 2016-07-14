@@ -122,8 +122,8 @@ a:focus { outline: none; }
 .interested .big-title::before {
   display: none;
 }
-.interested p {
-  
+.interested .change-form {
+  margin-bottom: 30px;
 }
 .change-form a{
   display: inline-block;
@@ -131,4 +131,12 @@ a:focus { outline: none; }
   height: 1px;
   border: 1px solid #fff;
 }
-
+.interested .form-text {
+  margin: 15px 0;
+}
+.interested .form-text-right {
+  float: right;
+}
+.interested .form-text-left {
+  float: left;
+}
