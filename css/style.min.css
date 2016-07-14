@@ -114,6 +114,7 @@ a:focus { outline: none; }
 .interested {
   background: url('../images/section3.png') no-repeat;
   background-size: 100% 100%;
+  padding-bottom: 50px;
 }
 .interested .big-title, .interested p {
   color: #eee;
@@ -131,12 +132,9 @@ a:focus { outline: none; }
   height: 1px;
   border: 1px solid #fff;
 }
-.interested .form-text {
-  margin: 15px 0;
-}
-.interested .form-text-right {
-  float: right;
-}
-.interested .form-text-left {
-  float: left;
+.interested .form-text { margin: 15px 0; }
+.interested .float-right { float: right; }
+.interested .float-left { float: left; }
+.interested .form-submit {
+  margin-top: 15px;
 }
