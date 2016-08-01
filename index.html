@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{app.description}}">
-    <meta name="keywords" content="软件开发, 项目外包, 响应式, APP, html5, css3, javascript, jQuery, bootstrap, angularJS, sass, less, PHP, .net, c#, c++, java, Android, ios">
+    <meta name="description" content="{{site.description}}">
+    <meta name="keywords" content="{{site.keywords}}">
     <link rel="shortcut icon" href="images/favicon.ico">
     
-  <title>冰果在线（BGONLINE.CN） - 专业软件开发、定制、项目外包、稳定极速！</title>
+  <title data-ng-bind="site.title"></title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <!--link rel="stylesheet" href="" media="screen and ()"-->
@@ -17,22 +17,30 @@
     <script src="js/respond.min.js"></script>
   <![endif]-->
 </head>
-<body>
-  <section class="home">
-    <header>
+<body data-spy="scroll" data-target=".navbar">
+  <section id="section1" class="home">
+    <header class="navbar-fixed-top">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <img src="images/logo.png">
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <nav>
-              <ul class="clearfix">
-                <li><a href="">首页</a></li>
-                <li><a href="">优势</a></li>
-                <li><a href="">流程</a></li>
-                <li><a href="">感兴趣</a></li>
-              </ul>
+          <div class="col-xs-12">
+            <nav class="navbar navbar-default re-navbar-default re-navbar" role="navigation">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle re-navbar-toggle" data-toggle="collapse" 
+                  data-target="#collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <img src="images/logo.png">
+              </div>
+              <div class="collapse navbar-collapse re-navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav re-navbar-nav">
+                  <li><a href="#section1">首页</a></li>
+                  <li><a href="#section2">优势</a></li>
+                  <li><a href="#section3">流程</a></li>
+                  <li><a href="#section4">感兴趣</a></li>
+                </ul>
+              </div>
             </nav>
           </div>
         </div>
@@ -53,7 +61,7 @@
       </div>
     </div>
   </section>
-  <section class="advantage">
+  <section id="section2" class="advantage">
     <div class="advantage-bg"></div>
     <div class="container">
       <div class="row">
@@ -91,7 +99,7 @@
       </div>
     </div>
   </section>
-  <section class="procedure">
+  <section id="section3" class="procedure">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -100,26 +108,47 @@
       </div>
       <div class="row">
         <div class="col-xs-4">
-          <p class="step"><span>1</span>标题1</p>
-          <span class="step-con">合作流程合作流程合作流程合作流程</span>
+          <p class="step"><span>1</span>说说你的想法</p>
+          <span class="step-con">
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+          </span>
         </div>
         <div class="col-xs-4">
-          <p class="step"><span>2</span>标题2</p>
-          <span class="step-con">合作流程合作流程合作流程合作流程合作流程</span>
+          <p class="step"><span>2</span>签订软件开发协议</p>
+          <span class="step-con">
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+          </span>
         </div>
         <div class="col-xs-4">
-          <p class="step"><span>3</span>标题3</p>
-          <span class="step-con">合作流程合作流程合作流程合作流程合作流程合作流程</span>
+          <p class="step"><span>3</span>喝喝茶逗逗鸟</p>
+          <span class="step-con">
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+            合作流程合作流程合作流程合作流程
+          </span>
         </div>
       </div>
     </div>
   </section>
-  <section class="interested">
+  <section id="section4" class="interested">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h1 class="big-title">对我们感兴趣</h1>
-          <p>对我们感兴趣对我们感兴趣对我们感兴趣对我们感兴趣</span>
+          <h1 class="big-title">对服务感兴趣</h1>
+          <p class="contact-dec">攻城狮将在1-3个工作日内与您联系，请保持通讯畅通哦！</span>
           <p class="change-form">
             <a href=""></a>
             <a href=""></a>
@@ -129,11 +158,11 @@
       <div class="row">
         <div class="col-xs-12 col-md-2"></div>
         <div class="col-xs-12 col-md-4">
-          <input type="text" class="form-control form-text float-right" placeholder="姓名">
-          <input type="text" class="form-control form-text float-right" placeholder="电话">
+          <input type="text" class="form-control form-text float-right" placeholder="请输入姓名">
+          <input type="text" class="form-control form-text float-right" placeholder="请输入电话">
         </div>
         <div class="col-xs-12 col-md-4">
-          <input type="email" class="form-control form-text" placeholder="邮箱">
+          <input type="email" class="form-control form-text" placeholder="请输入邮箱">
           <input type="file" class="form-control">
         </div>
         <div class="col-xs-12 col-md-2"></div>
@@ -141,7 +170,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-2"></div>
         <div class="col-xs-12 col-md-8">
-          <textarea name="" id="" style="width: 100%;height: 100px;" class="form-control"></textarea>
+          <textarea placeholder="填写需求简要，请尽量控制在500字以内" style="width: 100%;height: 100px;" class="form-control form-text"></textarea>
           <button class="btn btn-info form-submit float-right">提交</button>
         </div>
         <div class="col-xs-12 col-md-2"></div>
@@ -159,6 +188,8 @@
     </div>
   </footer>
   <script src="js/angular.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 <!--
