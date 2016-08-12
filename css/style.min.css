@@ -146,7 +146,7 @@ a:focus { outline: none; }
 }
 .procedure .step { margin-top: 50px; }
 .procedure .step > span {
-  font-size: 6em;
+  font-size: 10em;
   margin-right: 15px;
   color: #C3BAE5;
 }
